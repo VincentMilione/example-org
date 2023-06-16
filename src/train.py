@@ -63,7 +63,7 @@ cv2.ocl.setUseOpenCL(False)
 print(type(decay), type(learning_rate))
 
 
-emotion_model.compile(loss='categorical_crossentropy', optimizer=Adam(learning_rate=learning_rate, decay=float(decay)), metrics=[f1_score])
+emotion_model.compile(loss='categorical_crossentropy', optimizer=Adam(learning_rate=learning_rate), metrics=[f1_score])
 
 # Train the neural network/model
 emotion_model_info = emotion_model.fit_generator(

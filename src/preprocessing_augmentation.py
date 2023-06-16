@@ -17,7 +17,7 @@ def disgust_aug(filename, path, datagen):
             break
     print(f'{filename} has been augmented')
 
-os.makedir('data')
+os.makedirs('data')
 data_dir = os.path.join("FER2013", "train")
 test_dir = os.path.join("FER2013", "test")
 params = yaml.safe_load(open("params.yaml"))["prepare_phase"]
@@ -41,5 +41,5 @@ datagen = ImageDataGenerator(
     cval=0
 )
 
-for filename in os.listdir('data/FER2013/train/disgust/'):
+for filename in os.listdir('FER2013/train/disgust/'):
     disgust_aug(filename, os.path.join('data/preprocessed/train/disgust/', filename), datagen)
