@@ -1,0 +1,17 @@
+stages:
+  preprocessing:
+    cmd: python src/preprocessing_augmentation.py
+    params:
+      - prepare_phase.seed
+  train:
+    cmd: python src/train.py
+    params:
+    - train.batch_size
+    - train.decay
+    - train.learning_rate
+    - train.n_epoch
+    - train.seed
+  evaluation:
+    cmd: python src/evaluation.py
+    params:
+    - test.seed
