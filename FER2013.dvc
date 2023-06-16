@@ -3,3 +3,4 @@ outs:
   size: 22473
   nfiles: 14
   path: FER2013
+  hash: md5

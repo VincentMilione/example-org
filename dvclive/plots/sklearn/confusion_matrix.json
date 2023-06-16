@@ -1,0 +1,30 @@
+[
+    {
+        "actual": "0",
+        "predicted": "1"
+    },
+    {
+        "actual": "1",
+        "predicted": "1"
+    },
+    {
+        "actual": "2",
+        "predicted": "1"
+    },
+    {
+        "actual": "3",
+        "predicted": "1"
+    },
+    {
+        "actual": "4",
+        "predicted": "1"
+    },
+    {
+        "actual": "5",
+        "predicted": "1"
+    },
+    {
+        "actual": "6",
+        "predicted": "1"
+    }
+]
