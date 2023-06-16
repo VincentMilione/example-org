@@ -17,7 +17,6 @@ def disgust_aug(filename, path, datagen):
             break
     print(f'{filename} has been augmented')
 
-os.makedir('data')
 data_dir = os.path.join("FER2013", "train")
 test_dir = os.path.join("FER2013", "test")
 params = yaml.safe_load(open("params.yaml"))["prepare_phase"]
@@ -32,14 +31,3 @@ print('inizio copia del dataset')
 shutil.copytree(data_dir, out_train)
 shutil.copytree(test_dir, out_test)
 print('fine copia del dataset')
-
-datagen = ImageDataGenerator(
-    rotation_range=20,      # randomly rotate images by 20 degrees
-    zoom_range=0.1,         # randomly zoom images by up to 20%
-    horizontal_flip=True,    # randomly flip images horizontally
-    fill_mode="constant",
-    cval=0
-)
-
-for filename in os.listdir('data/FER2013/train/disgust/'):
-    disgust_aug(filename, os.path.join('data/preprocessed/train/disgust/', filename), datagen)
