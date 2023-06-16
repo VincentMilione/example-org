@@ -17,9 +17,9 @@ def disgust_aug(filename, path, datagen):
             break
     print(f'{filename} has been augmented')
 
-
-data_dir = os.path.join("data", "FER2013", "train")
-test_dir = os.path.join("data", "FER2013", "test")
+os.makedir('data')
+data_dir = os.path.join("FER2013", "train")
+test_dir = os.path.join("FER2013", "test")
 params = yaml.safe_load(open("params.yaml"))["prepare_phase"]
 seed = params["seed"]
 
