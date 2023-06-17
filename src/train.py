@@ -29,9 +29,9 @@ def f1_score(y_true, y_pred):
 
 
 params = yaml.safe_load(open("params.yaml"))["train"]
-seed = params["seed"]
+seed = params["seed"] 
 n_epoch = params["n_epoch"]
-learning_rate = params["learning_rate"]
+learning_rate = params["learning_rate"] + 0.0001
 decay = params["decay"]
 batch_size = params["batch_size"]
 # Initialize image data generator with rescaling
