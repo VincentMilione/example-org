@@ -23,8 +23,8 @@ stages:
       size: 22473
       nfiles: 14
     - path: src/train.py
-      md5: 622fc4ac61e96917af522fa21e27b570
-      size: 3480
+      md5: 9dbd58d8bd1fa488a497bf50a40ea2df
+      size: 3472
     params:
       params.yaml:
         train.batch_size: 1
@@ -34,7 +34,7 @@ stages:
         train.seed: 142
     outs:
     - path: model/emotion_model.h5
-      md5: fcb3c1d724f3b62f9e3fcff53128f344
+      md5: 611c6666ca1291e31da325d86efcc038
       size: 9413600
     - path: model/emotion_model.json
       md5: bd937d28dad34290b51c6fb6a5f0f908
@@ -47,7 +47,7 @@ stages:
       size: 22473
       nfiles: 14
     - path: model/emotion_model.h5
-      md5: fcb3c1d724f3b62f9e3fcff53128f344
+      md5: 611c6666ca1291e31da325d86efcc038
       size: 9413600
     - path: model/emotion_model.json
       md5: bd937d28dad34290b51c6fb6a5f0f908
